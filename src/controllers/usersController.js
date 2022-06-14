@@ -43,7 +43,7 @@ exports.updateUser = async (req, res) => {
 
       res.status(200).json({
         status: true,
-        response: "bonus amount updated sucessfully",
+        response: "bonus amount added sucessfully",
       });
     }
 
@@ -54,11 +54,10 @@ exports.updateUser = async (req, res) => {
 
       res.status(200).json({
         status: true,
-        response: "successfully updated",
+        response: "bonus amount added sucessfully",
       });
     }
   } catch (error) {
-    console.log(error);
     res.json({
       response_code: 404,
       response: "Error",
